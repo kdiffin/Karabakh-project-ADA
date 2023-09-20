@@ -1,3 +1,87 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@layer base {
+  ::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgb(65, 65, 65);
+
+    height: 6px;
+  }
+
+  html,
+  body {
+    background-color: rgb(65, 65, 65);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(139, 139, 139);
+    border-radius: 20px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+  }
+}
+
+@layer utilities {
+  /** removes scrollbar on Microsoft Edge */
+  @supports (-ms-ime-align: auto) {
+    .edge::-webkit-scrollbar {
+      width: 8px;
+      -ms-overflow-style: none;
+      display: none;
+
+      height: 6px;
+    }
+  }
+
+  .overflow-overlay {
+    overflow: overlay;
+  }
+
+  .home-background {
+    background-image: url("/castle.jpg");
+  }
+
+  .before-the-war-background {
+    background-image: url("/before-war.jpg");
+  }
+
+  .Overview-background {
+    background-image: url("/soldiers.png");
+  }
+
+  .infoSquareTextAnimation {
+    animation: fadein 1.5s ease-in alternate 1;
+  }
+
+  .after-the-war-background {
+    background-image: url("/Gandzasar-monastery-village.webp");
+  }
+  .global-perspective-background {
+    background-image: url("/global-perspective.png");
+  }
+
+  .shusha-background {
+    background-image: url("/shusha.jpg");
+  }
+
+  .navbar-item--hover:hover {
+    border-bottom: white solid 1.5px;
+    margin-top: -1.5px;
+  }
+}
