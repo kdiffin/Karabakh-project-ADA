@@ -25,6 +25,8 @@
   html,
   body {
     background-color: rgb(65, 65, 65);
+    width: 100vw;
+    height: 100vh;
   }
 
   ::-webkit-scrollbar-thumb {

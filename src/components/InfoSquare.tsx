@@ -5,8 +5,8 @@ function InfoSquare(props: { content: ReactNode }) {
   const [infoMost, setInfoMost] = useState(false);
   return (
     <div
-      className={`absolute bottom-24 rounded-r-sm bg-black/[85%]  transition-all duration-700  ${
-        infoMost ? "h-36 w-[485px] p-6" : "h-16 w-16 "
+      className={`fixed bottom-24 rounded-r-sm bg-black/[85%]  transition-all duration-700  ${
+        infoMost ? "w-[90%]  p-6 md:h-36 md:w-[485px]" : "h-16 w-16 "
       } `}
     >
       {!infoMost ? (

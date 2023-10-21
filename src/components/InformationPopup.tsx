@@ -19,7 +19,7 @@ function InformationPopup(props: {
       className={`fixed  left-0  top-0 z-50 h-screen w-screen bg-black/70 transition-all`}
     >
       <div className="flex h-screen w-full items-center justify-center text-white  ">
-        <div className="overflow-overlay relative m-10 ml-20  w-3/4 bg-black/70   px-20  py-20">
+        <div className="overflow-overlay relative m-10 ml-20 w-[90%] bg-black/70 px-20   py-20  sm:w-3/4">
           <div
             className="absolute right-3 top-1 cursor-pointer p-5 text-xl font-semibold text-white transition-all  active:scale-75"
             onClick={props.closePopup}

@@ -14,9 +14,9 @@ function Section(props: {
 
       h-screen text-white    `}
     >
-      <div className="flex h-full w-full items-center justify-center">
+      <div className=" relative h-screen w-screen items-center justify-center">
         <div
-          className="left-56 top-36 h-3/4   w-3/4 opacity-0"
+          className="left-1/2 top-1/2 z-50 h-3/4 w-3/4    translate-x-1/4 translate-y-1/4 bg-red-900 opacity-0"
           ref={props.uniqueRef}
         ></div>
       </div>

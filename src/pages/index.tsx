@@ -15,6 +15,7 @@ import {
   INFO_HOME,
   INFO_SHUSHA,
 } from "~/components/SectionInformation";
+import Sections from "~/components/Sections";
 
 export default function Home() {
   //this is done using the react-intersection-observer api
@@ -26,6 +27,7 @@ export default function Home() {
   const { ref: globalRef, inView: globalIsVisible } = useInView();
   const { ref: shushaRef, inView: shushaIsVisible } = useInView();
   const [showInformationPopup, setShowInformationPopup] = useState(false);
+  const [showNavigationMenu, setShowNavigationMenu] = useState(false);
 
   //cou;ldnt use state cuz of inf rerender thing
   let infoInsideSquare = <h1>what</h1>;
@@ -54,8 +56,11 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className=" overflow-overlay edge flex h-screen snap-both snap-mandatory scroll-smooth font-Poppins text-white">
-          <Navbar openPopup={() => setShowInformationPopup(true)} />
+        <div className=" overflow-overlay edge relative flex h-screen snap-both snap-mandatory scroll-smooth font-Poppins text-white">
+          <Navbar
+            openPopup={() => setShowInformationPopup(true)}
+            openMenu={() => setShowNavigationMenu(true)}
+          />
           <div className="flex-none flex-col">
             <Section
               id="Home"
@@ -92,13 +97,18 @@ export default function Home() {
           </div>
           <InfoSquare content={infoInsideSquare} />
         </div>
-      </main>
+        {showInformationPopup ? (
+          <InformationPopup closePopup={() => setShowInformationPopup(false)} />
+        ) : (
+          <></>
+        )}
 
-      {showInformationPopup ? (
-        <InformationPopup closePopup={() => setShowInformationPopup(false)} />
-      ) : (
-        <></>
-      )}
+        {showNavigationMenu ? (
+          <Sections closeSections={() => setShowNavigationMenu(false)} />
+        ) : (
+          <></>
+        )}
+      </main>
     </>
   );
 }

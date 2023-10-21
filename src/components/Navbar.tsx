@@ -1,8 +1,14 @@
 import React from "react";
-import { MdInfo } from "react-icons/md";
+import { MdInfo, MdMenu } from "react-icons/md";
 
-function Navbar({ openPopup }: { openPopup: VoidFunction }) {
-  const wonders = [
+function Navbar({
+  openPopup,
+  openMenu,
+}: {
+  openPopup: VoidFunction;
+  openMenu: VoidFunction;
+}) {
+  const navbarItems = [
     { name: "Home", id: "#Home" },
     { name: "Overview", id: "#Overview" },
     { name: "Before  War", id: "#Before-the-war" },
@@ -10,27 +16,65 @@ function Navbar({ openPopup }: { openPopup: VoidFunction }) {
     { name: "Global Perspective", id: "#Global-Perspective" },
     { name: "Turning Point", id: "#The-Turning-Point" },
   ];
+
   return (
-    <div className="group absolute  left-0 top-0 flex h-12 w-full  items-center justify-center bg-black/80 text-white backdrop-blur-xl">
-      <p
-        className="pointer-events-none absolute   left-0
-   right-0 select-none text-center   text-2xl font-semibold opacity-100 transition-all duration-700   group-hover:opacity-0 "
+    <div className=" fixed  left-0 top-0 z-20  w-full    text-white backdrop-blur-xl">
+      <div className="group relative z-10 flex w-full items-center justify-center bg-black/80 p-2">
+        <p className="  text-center   text-2xl font-semibold opacity-100  transition-all duration-700   md:group-hover:opacity-0 ">
+          The Second Karabakh War.
+        </p>
+
+        <div className="absolute hidden flex-1 gap-2 opacity-0 transition-all  duration-700 md:flex md:group-hover:opacity-100 ">
+          {navbarItems.map((item, i) => {
+            return (
+              <a
+                key={i}
+                href={item.id}
+                className="navbar-item--hover mx-5 cursor-pointer text-lg active:scale-90"
+              >
+                {item.name}
+              </a>
+            );
+          })}
+        </div>
+
+        <MdMenu
+          onClick={openMenu}
+          size={24}
+          className="absolute left-6 flex cursor-pointer active:scale-90 md:hidden"
+        />
+
+        <MdInfo
+          onClick={openPopup}
+          size={24}
+          className="absolute right-6 cursor-pointer active:scale-90"
+        />
+      </div>
+    </div>
+  );
+}
+
+export default Navbar;
+{
+  /* <p
+        className=" absolute   left-0
+   right-0  text-center   text-2xl font-semibold opacity-100  transition-all duration-700   md:group-hover:opacity-0 "
       >
         The Second Karabakh War.
       </p>
 
       <div
-        className="flex gap-2 opacity-0 transition-all 
-        duration-700  group-hover:opacity-100"
+        className="flex gap-2 bg-red-900 opacity-0 transition-all duration-700 
+        hover:opacity-100  md:group-hover:opacity-100"
       >
-        {wonders.map((wonder, i) => {
+        {navbarItems.map((item, i) => {
           return (
             <a
               key={i}
-              href={wonder.id}
+              href={item.id}
               className="navbar-item--hover mx-5 cursor-pointer text-lg active:scale-90"
             >
-              {wonder.name}
+              {item.name}
             </a>
           );
         })}
@@ -41,8 +85,5 @@ function Navbar({ openPopup }: { openPopup: VoidFunction }) {
         size={24}
         className="absolute right-6 cursor-pointer active:scale-90"
       />
-    </div>
-  );
+    </div> */
 }
-
-export default Navbar;
