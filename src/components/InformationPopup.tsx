@@ -71,7 +71,7 @@ function InformationPopup(props: {
                   <p className="flex items-center gap-2 text-xl ">
                     Submit a pull request:
                     <a
-                      href="https://github.com/diffim/diffin-chat/"
+                      href="https://github.com/kdiffin/Karabakh-project-ADA/tree/main"
                       target="_blank"
                       className="mt-1"
                       rel="noopener noreferrer"
@@ -84,10 +84,7 @@ function InformationPopup(props: {
                 <hr className="mb-6 border-gray-500" />
 
                 <div>
-                  <p className="text-2xl ">
-                    This site is open source! if you have any suggestions feel
-                    free to:
-                  </p>
+                  <p className="text-2xl ">References (links): </p>
                   <ul className="flex list-disc flex-col gap-4 p-6 hover:[&>*]:underline">
                     <li>
                       <a
