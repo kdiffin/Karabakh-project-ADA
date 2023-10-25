@@ -9,6 +9,79 @@ export const INFO_HOME = (
     />
   </>
 );
+
+export const INFO_CONCLUSION = (
+  <>
+    <InfoSquareText
+      information
+      header="The End."
+      paragraph="Thank you for taking some time out of your day to learn about the rich history of Karabakh, and the events which unfolded in it's second war."
+      isHomeText
+    />
+  </>
+);
+
+export const INFO_CULTURE = (
+  <>
+    <InfoSquareText
+      header="The Land Of Culture."
+      paragraph="This section is a homage to the wonderful culture and history of Karabakh, and how it affected the 2nd war."
+      information={
+        <>
+          <p>
+            Karabakh is a unique place in Azerbaijan known for its talented
+            poets and musicians. Poets such as Samad Vurgun, influenced by the
+            region&#39;s nature, have wrote beautiful poems. In the world of
+            music, there is Alim Gasimov, a gifted musician who creates amazing
+            Azerbaijani music. There are also many other extraordinary musicians
+            and writers like Uzeyir Hajibeyov, Suleyman Sani Akhundov, Rashid
+            Behbudov and so on. Their works show the unique beauty of Karabakh,
+            making people all over the world appreciate the culture of
+            Azerbaijan. The Karabakh region stands out with its ancient history,
+            setting it apart from most areas in Azerbaijan and the world. It
+            boasts a wealth of historical sites, material culture artifacts,
+            literature, art, and music. The region&#39;s stunning nature,
+            favorable climate, and abundant natural resources have profoundly
+            influenced the creative thinking and artistic expression of its
+            people.
+          </p>
+          <p>
+            Folk arts hold a central place in Karabakh&#39;s creative
+            expression, closely intertwined with the daily lives of its
+            inhabitants. The region&#39;s folk arts reflect the people&#39;s
+            standards of living, aesthetic preferences, national identity, and
+            cultural heritage. Remarkable examples of Karabakh folk art are
+            prominently displayed in prestigious museums worldwide, such as the
+            Victoria and Albert Museums in London, the Louvre Museum in Paris,
+            the Metropolitan Museum in Washington, Vienna, Rome, Berlin,
+            Istanbul, Tehran, and Cairo. Skilled Karabakh artisans have crafted
+            impressive artworks found in these renowned institutions.
+          </p>
+          <p>
+            Archaeological excavations in Karabakh reveal the artistic
+            achievements of its ancient inhabitants, including architectural
+            marvels. The region&#39;s fine art traditions have deep historical
+            roots, evident in rock paintings in Kalabajar, Aghdam, and Lachin
+            regions, intricately decorated tools and household items, exquisite
+            carpets, and jewelry. Notable architectural monuments like mosques,
+            tombs, palaces, churches, temples, and glazed tile patterns showcase
+            the region&#39;s grace and elegance. These cultural elements
+            constitute the essence of Azerbaijan&#39;s literary culture and
+            contribute significantly to its cultural heritage. Karabakh is also
+            known for its talented poets and musicians. Poets such as Samad
+            Vurgun, influenced by the region&#39;s nature, have wrote beautiful
+            poems. In the world of music, there is Alim Gasimov, a gifted
+            musician who creates amazing Azerbaijani music. There are also many
+            other extraordinary musicians and writers like Uzeyir Hajibeyov,
+            Suleyman Sani Akhundov, Rashid Behbudov and so on. Their works show
+            the unique beauty of Karabakh, making people all over the world
+            appreciate the culture of Azerbaijan.{" "}
+          </p>
+        </>
+      }
+    />
+  </>
+);
 export const INFO_BEFORE = (
   <>
     <InfoSquareText

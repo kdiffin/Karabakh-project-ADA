@@ -78,7 +78,15 @@
     background-image: url("/global-perspective.png");
   }
 
-  .shusha-background {
+  .geopolitical-background {
+    background-image: url("/geopolitical.jpg");
+  }
+
+  .conclusion-background {
+    background-image: url("/conclusion.jpg");
+  }
+
+  .culture-background {
     background-image: url("/shusha.jpg");
   }
 

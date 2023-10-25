@@ -18,7 +18,7 @@ function Navbar({
   ];
 
   return (
-    <div className=" fixed  left-0 top-0 z-20  w-full    text-white backdrop-blur-xl">
+    <div className=" fixed  left-0 top-0 z-[1]   w-full    text-white backdrop-blur-xl">
       <div className="group relative z-10 flex w-full items-center justify-center bg-black/80 p-2">
         <p className="  text-center   text-2xl font-semibold opacity-100  transition-all duration-700   md:group-hover:opacity-0 ">
           The Second Karabakh War.

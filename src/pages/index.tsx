@@ -2,7 +2,6 @@ import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
-import ContactInfo from "~/components/ContactInfo";
 import InfoSquare from "~/components/InfoSquare";
 import InformationPopup from "~/components/InformationPopup";
 import Navbar from "~/components/Navbar";
@@ -14,6 +13,8 @@ import {
   INFO_AFTER_WAR,
   INFO_HOME,
   INFO_SHUSHA,
+  INFO_CULTURE,
+  INFO_CONCLUSION,
 } from "~/components/SectionInformation";
 import Sections from "~/components/Sections";
 
@@ -25,7 +26,10 @@ export default function Home() {
   const { ref: afterTheWarRef, inView: afterTheWarIsVisible } = useInView();
   const { ref: overviewRef, inView: overviewIsVisible } = useInView();
   const { ref: globalRef, inView: globalIsVisible } = useInView();
-  const { ref: shushaRef, inView: shushaIsVisible } = useInView();
+  const { ref: geopoliticalRef, inView: geopoliticalIsVisible } = useInView();
+  const { ref: cultureRef, inView: cultureIsVisible } = useInView();
+  const { ref: conclusionRef, inView: conclusionIsVisible } = useInView();
+
   const [showInformationPopup, setShowInformationPopup] = useState(false);
   const [showNavigationMenu, setShowNavigationMenu] = useState(false);
 
@@ -41,8 +45,12 @@ export default function Home() {
     infoInsideSquare = INFO_AFTER_WAR;
   } else if (globalIsVisible) {
     infoInsideSquare = INFO_GLOBAL_PERSPECTIVE;
-  } else if (shushaIsVisible) {
+  } else if (geopoliticalIsVisible) {
     infoInsideSquare = INFO_SHUSHA;
+  } else if (cultureIsVisible) {
+    infoInsideSquare = INFO_CULTURE;
+  } else if (conclusionIsVisible) {
+    infoInsideSquare = INFO_CONCLUSION;
   }
 
   return (
@@ -56,7 +64,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className=" overflow-overlay edge relative flex h-screen snap-both snap-mandatory scroll-smooth font-Poppins text-white">
+        <div className=" overflow-overlay  edge relative flex h-screen snap-both snap-mandatory scroll-smooth font-Poppins text-white">
           <Navbar
             openPopup={() => setShowInformationPopup(true)}
             openMenu={() => setShowNavigationMenu(true)}
@@ -74,12 +82,12 @@ export default function Home() {
             />
             <Section
               uniqueRef={BeforeTheWarRef}
-              id="Before-the-war"
+              id="Causes of the war."
               bgclassName="before-the-war-background"
             />
             <Section
               uniqueRef={afterTheWarRef}
-              id="After-the-war"
+              id="Consequences of the war."
               bgclassName="after-the-war-background"
             />
           </div>
@@ -91,8 +99,20 @@ export default function Home() {
             />
             <Section
               id="The-Turning-Point"
-              uniqueRef={shushaRef}
-              bgclassName="shusha-background"
+              uniqueRef={geopoliticalRef}
+              bgclassName="geopolitical-background"
+            />
+
+            <Section
+              id="Culture"
+              uniqueRef={cultureRef}
+              bgclassName="culture-background"
+            />
+
+            <Section
+              id="Conclusion"
+              uniqueRef={conclusionRef}
+              bgclassName="conclusion-background"
             />
           </div>
           <InfoSquare content={infoInsideSquare} />
