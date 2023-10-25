@@ -59,7 +59,7 @@ export default function Home() {
         <title>2nd Karabakh war</title>
         <meta
           name="description"
-          content="Explore the Second Nagorno-Karabakh War, a 44-day conflict that unfolded in 2020. Delve into its historical context, major events, aftermath, and geopolitical impact."
+          content="Explore the Second Karabakh War, a 44-day conflict that unfolded in 2020. Delve into its historical context, major events, aftermath, and geopolitical impact."
         />
       </Head>
 
@@ -82,12 +82,12 @@ export default function Home() {
             />
             <Section
               uniqueRef={BeforeTheWarRef}
-              id="Causes of the war."
+              id="Before-the-war"
               bgclassName="before-the-war-background"
             />
             <Section
               uniqueRef={afterTheWarRef}
-              id="Consequences of the war."
+              id="After-the-war"
               bgclassName="after-the-war-background"
             />
           </div>
@@ -98,19 +98,19 @@ export default function Home() {
               bgclassName="global-perspective-background"
             />
             <Section
-              id="The-Turning-Point"
+              id="Geopolitical-impact"
               uniqueRef={geopoliticalRef}
               bgclassName="geopolitical-background"
             />
 
             <Section
-              id="Culture"
+              id="the-land-of-culture"
               uniqueRef={cultureRef}
               bgclassName="culture-background"
             />
 
             <Section
-              id="Conclusion"
+              id="The-End"
               uniqueRef={conclusionRef}
               bgclassName="conclusion-background"
             />

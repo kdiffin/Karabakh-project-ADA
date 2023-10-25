@@ -14,7 +14,9 @@ function Navbar({
     { name: "Before  War", id: "#Before-the-war" },
     { name: "After War", id: "#After-the-war" },
     { name: "Global Perspective", id: "#Global-Perspective" },
-    { name: "Turning Point", id: "#The-Turning-Point" },
+    { name: "Geopolitical impact", id: "#Geopolitical-impact" },
+    { name: "Land Of Culture", id: "#the-land-of-culture" },
+    { name: "The End", id: "#The-End" },
   ];
 
   return (

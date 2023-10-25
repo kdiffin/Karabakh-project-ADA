@@ -4,7 +4,7 @@ export const INFO_HOME = (
     <InfoSquareText
       information
       header="Welcome."
-      paragraph="This site aims to shed light on the different aspects of the second Nagorno-Karabakh war."
+      paragraph="This site aims to shed light on the different aspects of the second Karabakh war."
       isHomeText
     />
   </>
@@ -136,32 +136,30 @@ export const INFO_AFTER_WAR = (
       information={
         <>
           <p>
-            Following the conclusion of the 2nd Nagorno-Karabakh War, a palpable
-            wave of patriotism swept through the Azerbaijani populace. The
-            hard-fought victory ignited a sense of national unity and pride,
-            binding people together in the face of adversity. This shared
-            triumph over adversity underscored the resilience of the Azerbaijani
-            people and solidified their resolve to stand strong as a nation.
-            Families, communities, and regions came together, fostering a
-            newfound spirit of camaraderie. The war&#39;s end marked the
-            beginning of a period of reconstruction and healing, with
-            individuals and groups actively contributing to the nation&#39;s
-            recovery efforts. This surge in patriotism was not merely a
-            momentary sentiment; it laid the foundation for a more closely-knit
-            Azerbaijani society, emphasizing the importance of unity and
-            collective action.
+            Following the conclusion of the 2nd Karabakh War, a palpable wave of
+            patriotism swept through the Azerbaijani populace. The hard-fought
+            victory ignited a sense of national unity and pride, binding people
+            together in the face of adversity. This shared triumph over
+            adversity underscored the resilience of the Azerbaijani people and
+            solidified their resolve to stand strong as a nation. Families,
+            communities, and regions came together, fostering a newfound spirit
+            of camaraderie. The war&#39;s end marked the beginning of a period
+            of reconstruction and healing, with individuals and groups actively
+            contributing to the nation&#39;s recovery efforts. This surge in
+            patriotism was not merely a momentary sentiment; it laid the
+            foundation for a more closely-knit Azerbaijani society, emphasizing
+            the importance of unity and collective action.
           </p>
           <p>
-            Expectations for the Nagorno-Karabakh region were indeed high among
-            the Azerbaijani population. For many, this land held deep cultural
-            and historical significance, making its liberation a momentous
-            event. The idea of returning to these cherished territories was met
-            with great anticipation. People eagerly looked forward to
-            reconnecting with their ancestral homes, rejuvenating communities,
-            and rebuilding infrastructure. The thought of revitalizing these
-            regions and transforming them into prosperous and thriving paradises
-            fueled a sense of optimism and purpose among the Azerbaijani
-            populace.
+            Expectations for the Karabakh region were indeed high among the
+            Azerbaijani population. For many, this land held deep cultural and
+            historical significance, making its liberation a momentous event.
+            The idea of returning to these cherished territories was met with
+            great anticipation. People eagerly looked forward to reconnecting
+            with their ancestral homes, rejuvenating communities, and rebuilding
+            infrastructure. The thought of revitalizing these regions and
+            transforming them into prosperous and thriving paradises fueled a
+            sense of optimism and purpose among the Azerbaijani populace.
           </p>
           <p>
             On the other hand, in Armenia, the aftermath of the war brought
@@ -185,7 +183,7 @@ export const INFO_OVERVIEW = (
   <>
     <InfoSquareText
       header="Overview."
-      paragraph="A concise summary of occurrences throughout the 2nd Nagorno-Karabakh conflict, focusing solely on the wartime events."
+      paragraph="A concise summary of occurrences throughout the 2nd Karabakh conflict, focusing solely on the wartime events."
       information={
         <>
           <p>
@@ -216,7 +214,7 @@ export const INFO_OVERVIEW = (
           </p>
           <p>
             Given the occupation by the armed forces of the Republic of Armenia
-            of the Nagorno-Karabakh region of the Republic of Azerbaijan and the
+            of the Karabakh region of the Republic of Azerbaijan and the
             adjacent regions, as well as the real threat of an armed attack on
             the Republic of Azerbaijan, by the Presidential Decree dated
             September 27, 2020, from September 28, 2020 at 12 a.m. martial law
@@ -391,8 +389,8 @@ export const INFO_OVERVIEW = (
 export const INFO_SHUSHA = (
   <>
     <InfoSquareText
-      header="The Turning Point."
-      paragraph="This section shows the monumental recapture of Shusha. A historically hard-to-capture region renowned for its rugged terrain and rocky mountains. "
+      header="Geopolitical Impact."
+      paragraph="This section shows the substantial importance of geoplitics in the war, and talks about how geographic climate effected the war."
       information={
         <>
           <p>
@@ -449,7 +447,7 @@ export const INFO_GLOBAL_PERSPECTIVE = (
             <p>
               The Second Karabakh War, which took place in 2020, prompted
               significant reactions from various states across the globe. As
-              Armenia and Azerbaijan clashed over the Nagorno-Karabakh region,
+              Armenia and Azerbaijan clashed over the Karabakh region,
               neighboring countries like Turkey provided vocal support to
               Azerbaijan, while Russia maintained its historical ties with
               Armenia but also played a role as a mediator in the conflict.
