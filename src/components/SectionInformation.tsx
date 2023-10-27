@@ -4,8 +4,81 @@ export const INFO_HOME = (
     <InfoSquareText
       information
       header="Welcome."
-      paragraph="This site aims to shed light on the different aspects of the second Nagorno-Karabakh war."
+      paragraph="This site aims to shed light on the different aspects of the second Karabakh war."
       isHomeText
+    />
+  </>
+);
+
+export const INFO_CONCLUSION = (
+  <>
+    <InfoSquareText
+      information
+      header="The End."
+      paragraph="Thank you for taking some time out of your day to learn about the rich history of Karabakh, and the events which unfolded in it's second war."
+      isHomeText
+    />
+  </>
+);
+
+export const INFO_CULTURE = (
+  <>
+    <InfoSquareText
+      header="The Land Of Culture."
+      paragraph="This section is a homage to the wonderful culture and history of Karabakh, and how it affected the 2nd war."
+      information={
+        <>
+          <p>
+            Karabakh is a unique place in Azerbaijan known for its talented
+            poets and musicians. Poets such as Samad Vurgun, influenced by the
+            region&#39;s nature, have wrote beautiful poems. In the world of
+            music, there is Alim Gasimov, a gifted musician who creates amazing
+            Azerbaijani music. There are also many other extraordinary musicians
+            and writers like Uzeyir Hajibeyov, Suleyman Sani Akhundov, Rashid
+            Behbudov and so on. Their works show the unique beauty of Karabakh,
+            making people all over the world appreciate the culture of
+            Azerbaijan. The Karabakh region stands out with its ancient history,
+            setting it apart from most areas in Azerbaijan and the world. It
+            boasts a wealth of historical sites, material culture artifacts,
+            literature, art, and music. The region&#39;s stunning nature,
+            favorable climate, and abundant natural resources have profoundly
+            influenced the creative thinking and artistic expression of its
+            people.
+          </p>
+          <p>
+            Folk arts hold a central place in Karabakh&#39;s creative
+            expression, closely intertwined with the daily lives of its
+            inhabitants. The region&#39;s folk arts reflect the people&#39;s
+            standards of living, aesthetic preferences, national identity, and
+            cultural heritage. Remarkable examples of Karabakh folk art are
+            prominently displayed in prestigious museums worldwide, such as the
+            Victoria and Albert Museums in London, the Louvre Museum in Paris,
+            the Metropolitan Museum in Washington, Vienna, Rome, Berlin,
+            Istanbul, Tehran, and Cairo. Skilled Karabakh artisans have crafted
+            impressive artworks found in these renowned institutions.
+          </p>
+          <p>
+            Archaeological excavations in Karabakh reveal the artistic
+            achievements of its ancient inhabitants, including architectural
+            marvels. The region&#39;s fine art traditions have deep historical
+            roots, evident in rock paintings in Kalabajar, Aghdam, and Lachin
+            regions, intricately decorated tools and household items, exquisite
+            carpets, and jewelry. Notable architectural monuments like mosques,
+            tombs, palaces, churches, temples, and glazed tile patterns showcase
+            the region&#39;s grace and elegance. These cultural elements
+            constitute the essence of Azerbaijan&#39;s literary culture and
+            contribute significantly to its cultural heritage. Karabakh is also
+            known for its talented poets and musicians. Poets such as Samad
+            Vurgun, influenced by the region&#39;s nature, have wrote beautiful
+            poems. In the world of music, there is Alim Gasimov, a gifted
+            musician who creates amazing Azerbaijani music. There are also many
+            other extraordinary musicians and writers like Uzeyir Hajibeyov,
+            Suleyman Sani Akhundov, Rashid Behbudov and so on. Their works show
+            the unique beauty of Karabakh, making people all over the world
+            appreciate the culture of Azerbaijan.{" "}
+          </p>
+        </>
+      }
     />
   </>
 );
@@ -63,32 +136,30 @@ export const INFO_AFTER_WAR = (
       information={
         <>
           <p>
-            Following the conclusion of the 2nd Nagorno-Karabakh War, a palpable
-            wave of patriotism swept through the Azerbaijani populace. The
-            hard-fought victory ignited a sense of national unity and pride,
-            binding people together in the face of adversity. This shared
-            triumph over adversity underscored the resilience of the Azerbaijani
-            people and solidified their resolve to stand strong as a nation.
-            Families, communities, and regions came together, fostering a
-            newfound spirit of camaraderie. The war&#39;s end marked the
-            beginning of a period of reconstruction and healing, with
-            individuals and groups actively contributing to the nation&#39;s
-            recovery efforts. This surge in patriotism was not merely a
-            momentary sentiment; it laid the foundation for a more closely-knit
-            Azerbaijani society, emphasizing the importance of unity and
-            collective action.
+            Following the conclusion of the 2nd Karabakh War, a palpable wave of
+            patriotism swept through the Azerbaijani populace. The hard-fought
+            victory ignited a sense of national unity and pride, binding people
+            together in the face of adversity. This shared triumph over
+            adversity underscored the resilience of the Azerbaijani people and
+            solidified their resolve to stand strong as a nation. Families,
+            communities, and regions came together, fostering a newfound spirit
+            of camaraderie. The war&#39;s end marked the beginning of a period
+            of reconstruction and healing, with individuals and groups actively
+            contributing to the nation&#39;s recovery efforts. This surge in
+            patriotism was not merely a momentary sentiment; it laid the
+            foundation for a more closely-knit Azerbaijani society, emphasizing
+            the importance of unity and collective action.
           </p>
           <p>
-            Expectations for the Nagorno-Karabakh region were indeed high among
-            the Azerbaijani population. For many, this land held deep cultural
-            and historical significance, making its liberation a momentous
-            event. The idea of returning to these cherished territories was met
-            with great anticipation. People eagerly looked forward to
-            reconnecting with their ancestral homes, rejuvenating communities,
-            and rebuilding infrastructure. The thought of revitalizing these
-            regions and transforming them into prosperous and thriving paradises
-            fueled a sense of optimism and purpose among the Azerbaijani
-            populace.
+            Expectations for the Karabakh region were indeed high among the
+            Azerbaijani population. For many, this land held deep cultural and
+            historical significance, making its liberation a momentous event.
+            The idea of returning to these cherished territories was met with
+            great anticipation. People eagerly looked forward to reconnecting
+            with their ancestral homes, rejuvenating communities, and rebuilding
+            infrastructure. The thought of revitalizing these regions and
+            transforming them into prosperous and thriving paradises fueled a
+            sense of optimism and purpose among the Azerbaijani populace.
           </p>
           <p>
             On the other hand, in Armenia, the aftermath of the war brought
@@ -112,7 +183,7 @@ export const INFO_OVERVIEW = (
   <>
     <InfoSquareText
       header="Overview."
-      paragraph="A concise summary of occurrences throughout the 2nd Nagorno-Karabakh conflict, focusing solely on the wartime events."
+      paragraph="A concise summary of occurrences throughout the 2nd Karabakh conflict, focusing solely on the wartime events."
       information={
         <>
           <p>
@@ -143,7 +214,7 @@ export const INFO_OVERVIEW = (
           </p>
           <p>
             Given the occupation by the armed forces of the Republic of Armenia
-            of the Nagorno-Karabakh region of the Republic of Azerbaijan and the
+            of the Karabakh region of the Republic of Azerbaijan and the
             adjacent regions, as well as the real threat of an armed attack on
             the Republic of Azerbaijan, by the Presidential Decree dated
             September 27, 2020, from September 28, 2020 at 12 a.m. martial law
@@ -318,8 +389,8 @@ export const INFO_OVERVIEW = (
 export const INFO_SHUSHA = (
   <>
     <InfoSquareText
-      header="The Turning Point."
-      paragraph="This section shows the monumental recapture of Shusha. A historically hard-to-capture region renowned for its rugged terrain and rocky mountains. "
+      header="Geopolitical Impact."
+      paragraph="This section shows the substantial importance of geoplitics in the war, and talks about how geographic climate effected the war."
       information={
         <>
           <p>
@@ -341,6 +412,13 @@ export const INFO_SHUSHA = (
             important location in the region. Its recapture marked a turning
             point in the conflict.{" "}
           </p>
+
+          <img
+            className="mt-8"
+            src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fastara-ih.gov.az%2Fstorage%2Ffiles%2Fimages%2FXerite-05_0615.jpg&f=1&nofb=1&ipt=f82b8dba700037459b2aed3eb1e122b04efc09a7a5e74e2e77d77a0410b22a74&ipo=images"
+            alt=""
+          />
+
           <p>
             Azerbaijani forces, supported by modern military equipment,
             well-executed strategies, and determined soldiers, managed to retake
@@ -358,6 +436,12 @@ export const INFO_SHUSHA = (
             reconciliation and rebuilding, emphasizing the need for dialogue and
             international cooperation to ensure stability in the region.
           </p>
+
+          <img
+            className="mt-8"
+            src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgdb.rferl.org%2F1A9799F0-3057-4BE6-AA47-F08F61F95E84_mw1024_s_n.gif&f=1&nofb=1&ipt=49b672f23aeba4709aef410575bb2ff381982332875195fa5fe92c8783dfe42d&ipo=images"
+            alt=""
+          />
         </>
       }
     />
@@ -376,7 +460,7 @@ export const INFO_GLOBAL_PERSPECTIVE = (
             <p>
               The Second Karabakh War, which took place in 2020, prompted
               significant reactions from various states across the globe. As
-              Armenia and Azerbaijan clashed over the Nagorno-Karabakh region,
+              Armenia and Azerbaijan clashed over the Karabakh region,
               neighboring countries like Turkey provided vocal support to
               Azerbaijan, while Russia maintained its historical ties with
               Armenia but also played a role as a mediator in the conflict.

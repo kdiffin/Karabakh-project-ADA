@@ -2,7 +2,6 @@ import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
-import ContactInfo from "~/components/ContactInfo";
 import InfoSquare from "~/components/InfoSquare";
 import InformationPopup from "~/components/InformationPopup";
 import Navbar from "~/components/Navbar";
@@ -14,6 +13,8 @@ import {
   INFO_AFTER_WAR,
   INFO_HOME,
   INFO_SHUSHA,
+  INFO_CULTURE,
+  INFO_CONCLUSION,
 } from "~/components/SectionInformation";
 import Sections from "~/components/Sections";
 
@@ -25,7 +26,10 @@ export default function Home() {
   const { ref: afterTheWarRef, inView: afterTheWarIsVisible } = useInView();
   const { ref: overviewRef, inView: overviewIsVisible } = useInView();
   const { ref: globalRef, inView: globalIsVisible } = useInView();
-  const { ref: shushaRef, inView: shushaIsVisible } = useInView();
+  const { ref: geopoliticalRef, inView: geopoliticalIsVisible } = useInView();
+  const { ref: cultureRef, inView: cultureIsVisible } = useInView();
+  const { ref: conclusionRef, inView: conclusionIsVisible } = useInView();
+
   const [showInformationPopup, setShowInformationPopup] = useState(false);
   const [showNavigationMenu, setShowNavigationMenu] = useState(false);
 
@@ -41,8 +45,12 @@ export default function Home() {
     infoInsideSquare = INFO_AFTER_WAR;
   } else if (globalIsVisible) {
     infoInsideSquare = INFO_GLOBAL_PERSPECTIVE;
-  } else if (shushaIsVisible) {
+  } else if (geopoliticalIsVisible) {
     infoInsideSquare = INFO_SHUSHA;
+  } else if (cultureIsVisible) {
+    infoInsideSquare = INFO_CULTURE;
+  } else if (conclusionIsVisible) {
+    infoInsideSquare = INFO_CONCLUSION;
   }
 
   return (
@@ -51,12 +59,12 @@ export default function Home() {
         <title>2nd Karabakh war</title>
         <meta
           name="description"
-          content="Explore the Second Nagorno-Karabakh War, a 44-day conflict that unfolded in 2020. Delve into its historical context, major events, aftermath, and geopolitical impact."
+          content="Explore the Second Karabakh War, a 44-day conflict that unfolded in 2020. Delve into its historical context, major events, aftermath, and geopolitical impact."
         />
       </Head>
 
       <main>
-        <div className=" overflow-overlay edge relative flex h-screen snap-both snap-mandatory scroll-smooth font-Poppins text-white">
+        <div className=" overflow-overlay  edge relative flex h-screen snap-both snap-mandatory scroll-smooth font-Poppins text-white">
           <Navbar
             openPopup={() => setShowInformationPopup(true)}
             openMenu={() => setShowNavigationMenu(true)}
@@ -90,9 +98,21 @@ export default function Home() {
               bgclassName="global-perspective-background"
             />
             <Section
-              id="The-Turning-Point"
-              uniqueRef={shushaRef}
-              bgclassName="shusha-background"
+              id="Geopolitical-impact"
+              uniqueRef={geopoliticalRef}
+              bgclassName="geopolitical-background"
+            />
+
+            <Section
+              id="the-land-of-culture"
+              uniqueRef={cultureRef}
+              bgclassName="culture-background"
+            />
+
+            <Section
+              id="The-End"
+              uniqueRef={conclusionRef}
+              bgclassName="conclusion-background"
             />
           </div>
           <InfoSquare content={infoInsideSquare} />

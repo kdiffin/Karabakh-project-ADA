@@ -18,8 +18,8 @@ function InformationPopup(props: {
     <div
       className={`fixed  left-0  top-0 z-50 h-screen w-screen bg-black/70 transition-all`}
     >
-      <div className="flex h-screen w-full items-center justify-center text-white  ">
-        <div className="overflow-overlay relative m-10 ml-20 w-[90%] bg-black/70 px-20   py-20  sm:w-3/4">
+      <div className=" flex h-screen w-full items-center justify-center text-white  ">
+        <div className="overflow-overlay relative max-h-[95vh] w-[95%] bg-black/70 px-20 py-20 sm:m-10   sm:ml-20  sm:w-3/4">
           <div
             className="absolute right-3 top-1 cursor-pointer p-5 text-xl font-semibold text-white transition-all  active:scale-75"
             onClick={props.closePopup}
@@ -71,7 +71,7 @@ function InformationPopup(props: {
                   <p className="flex items-center gap-2 text-xl ">
                     Submit a pull request:
                     <a
-                      href="https://github.com/diffim/diffin-chat/"
+                      href="https://github.com/kdiffin/Karabakh-project-ADA/tree/main"
                       target="_blank"
                       className="mt-1"
                       rel="noopener noreferrer"
@@ -79,6 +79,72 @@ function InformationPopup(props: {
                       <BsGithub size={20} />
                     </a>
                   </p>
+                </div>
+
+                <hr className="mb-6 border-gray-500" />
+
+                <div>
+                  <p className="text-2xl ">References (links): </p>
+                  <ul className="flex list-disc flex-col gap-4 p-6 hover:[&>*]:underline">
+                    <li>
+                      <a
+                        href="https://genprosecutor.gov.az/en/page/azerbaycan/i-ve-ii-qarabag-muharibesi/44-gun-suren-veten-muharibesi-ii-qarabag-muharibesi
+                  "
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-xl "
+                      >
+                        https://genprosecutor.gov.az/en/page/azerbaycan/i-ve-ii-qarabag-muharibesi/44-gun-suren-veten-muharibesi-ii-qarabag-muharibesi
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://www.virtualkarabakh.az/"
+                        className="flex items-center gap-2 text-xl "
+                      >
+                        https://www.virtualkarabakh.az/
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://44days.info/
+                      "
+                        className="flex items-center gap-2 text-xl "
+                      >
+                        https://44days.info/
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://en.wikipedia.org/wiki/International_reactions_to_the_Second_Nagorno-Karabakh_War"
+                        className="flex items-center gap-2 text-xl "
+                      >
+                        https://en.wikipedia.org/wiki/International_reactions_to_the_Second_Nagorno-Karabakh_War
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://mod.gov.az/en/armenia-azerbaijan-conflict-599/
+                      "
+                        className="flex items-center gap-2 text-xl "
+                      >
+                        https://mod.gov.az/en/armenia-azerbaijan-conflict-599/
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://president.az/en/pages/view/azerbaijan/karabakh2/"
+                        className="flex items-center gap-2 text-xl"
+                      >
+                        https://president.az/en/pages/view/azerbaijan/karabakh2/
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
