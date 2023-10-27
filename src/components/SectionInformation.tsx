@@ -412,6 +412,13 @@ export const INFO_SHUSHA = (
             important location in the region. Its recapture marked a turning
             point in the conflict.{" "}
           </p>
+
+          <img
+            className="mt-8"
+            src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fastara-ih.gov.az%2Fstorage%2Ffiles%2Fimages%2FXerite-05_0615.jpg&f=1&nofb=1&ipt=f82b8dba700037459b2aed3eb1e122b04efc09a7a5e74e2e77d77a0410b22a74&ipo=images"
+            alt=""
+          />
+
           <p>
             Azerbaijani forces, supported by modern military equipment,
             well-executed strategies, and determined soldiers, managed to retake
@@ -429,6 +436,12 @@ export const INFO_SHUSHA = (
             reconciliation and rebuilding, emphasizing the need for dialogue and
             international cooperation to ensure stability in the region.
           </p>
+
+          <img
+            className="mt-8"
+            src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgdb.rferl.org%2F1A9799F0-3057-4BE6-AA47-F08F61F95E84_mw1024_s_n.gif&f=1&nofb=1&ipt=49b672f23aeba4709aef410575bb2ff381982332875195fa5fe92c8783dfe42d&ipo=images"
+            alt=""
+          />
         </>
       }
     />

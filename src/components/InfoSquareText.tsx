@@ -2,6 +2,8 @@ import React, { ReactNode, useState } from "react";
 import { BsChevronDoubleRight } from "react-icons/bs";
 import { FaAngleDoubleRight, FaShareSquare } from "react-icons/fa";
 import Popup from "./Popup";
+import { useAtom } from "jotai";
+import { HideNavbarAtom } from "~/state/atoms";
 
 function InfoSquareText(props: {
   header: ReactNode;
@@ -11,9 +13,7 @@ function InfoSquareText(props: {
 }) {
   //this component is used in consts.jsx
   const [popupToggle, setPopupToggle] = useState(false);
-  function closePopup() {
-    setPopupToggle(false);
-  }
+  const [hideNavbar, setHideNavbar] = useAtom(HideNavbarAtom);
 
   return (
     <>
@@ -33,7 +33,10 @@ function InfoSquareText(props: {
           </a>
         ) : (
           <div
-            onClick={() => setPopupToggle(true)}
+            onClick={() => {
+              setPopupToggle(true);
+              setHideNavbar(true);
+            }}
             className="  absolute bottom-2 right-2 cursor-pointer   transition duration-100  active:scale-75    "
           >
             <div className="flex animate-pulse items-center justify-center">
@@ -44,7 +47,7 @@ function InfoSquareText(props: {
       </div>
       {popupToggle ? (
         <Popup
-          closePopup={closePopup}
+          setPopup={setPopupToggle}
           header={props.header}
           information={props.information}
         />
