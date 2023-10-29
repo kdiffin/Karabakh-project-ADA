@@ -119,15 +119,6 @@ function InformationPopup(props: {
 
                     <li>
                       <a
-                        href="https://en.wikipedia.org/wiki/International_reactions_to_the_Second_Nagorno-Karabakh_War"
-                        className="flex items-center gap-2 text-xl "
-                      >
-                        https://en.wikipedia.org/wiki/International_reactions_to_the_Second_Nagorno-Karabakh_War
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
                         href="https://mod.gov.az/en/armenia-azerbaijan-conflict-599/
                       "
                         className="flex items-center gap-2 text-xl "
